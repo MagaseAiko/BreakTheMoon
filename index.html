@@ -82,7 +82,7 @@
   <!-- Home button with score above it -->
   <div id="homeBtnWrap">
     <div id="scoreAboveHome"><span id="scoreAboveHomeVal">0</span><br>PTS</div>
-    <a class="home-btn" id="homeBtn" href="https://magaseaiko.github.io/Home/" title="Início">🏠</a>
+    <a class="home-btn" href="https://magaseaiko.github.io/Home/" title="Início">🏠</a>
   </div>
 
   <!-- Mute button (always visible) -->
@@ -989,11 +989,6 @@ document.getElementById('pauseMenuBtn').addEventListener('click',()=>{
   document.getElementById('pauseOverlay').style.display='none';
   document.getElementById('pauseBtn').style.display='none';
   document.getElementById('startScreen').style.display='flex';
-});
-// Fix 3: Home button — href is placeholder
-document.getElementById('homeBtn').addEventListener('click',e=>{
-  e.preventDefault();
-  window.location.href='https://magaseaiko.github.io/Home/'; // substituir pelo link real
 });
 // Fix 4: Stored power release button
 document.getElementById('storedPowerBtn').addEventListener('click',releaseStoredPower);
